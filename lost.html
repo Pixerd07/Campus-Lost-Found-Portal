@@ -1,30 +1,102 @@
+<!-- ================= lost.html ================= -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lost</title>
+    <title>Report Lost Item</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <header>
+
+    <header>
+
         <nav>
-            <h2>Campus Lost & Found </h2>
+
+            <h2>Campus Lost & Found</h2>
+
             <ul>
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="lost.html">Report Lost</a></li>
                 <li><a href="found.html">Report Found</a></li>
                 <li><a href="browse.html">Browse</a></li>
                 <li><a href="admin.html">Admin</a></li>
+
             </ul>
+
             <div class="right">
+
                 <span id="welcomeUser"></span>
-                <button class="logout-btn">Logout</button>
+
+                <button class="logout-btn">
+                    Logout
+                </button>
+
             </div>
 
         </nav>
 
-
     </header>
+
+
+    <div class="form-container">
+
+        <h1>Report Lost Item</h1>
+
+        <form id="lostForm">
+
+            <input 
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input 
+                type="text"
+                id="item"
+                placeholder="Lost Item Name"
+                required
+            >
+
+            <input 
+                type="text"
+                id="location"
+                placeholder="Lost Location"
+                required
+            >
+
+            <input 
+                type="date"
+                id="date"
+                required
+            >
+
+            <textarea 
+                id="description"
+                placeholder="Describe the Item"
+            ></textarea>
+
+            <input 
+                type="text"
+                id="contact"
+                placeholder="Phone Number or Email"
+                required
+            >
+
+            <button type="submit">
+                Submit Report
+            </button>
+
+        </form>
+
+    </div>
+
 </body>
+
 </html>
