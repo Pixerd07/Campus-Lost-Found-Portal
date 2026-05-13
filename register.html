@@ -1,75 +1,45 @@
-<!-- ================= register.html ================= -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
+<body class="auth-body">
 
-<body>
+<div class="register-box">
 
-    <div class="register-box">
+  <div class="logo-section">
+    <h1>Campus Lost & Found</h1>
+    <p>Create Your Student Account</p>
+  </div>
 
-        <div class="logo-section">
+  <form id="registerForm">
 
-            <h1>Campus Lost & Found</h1>
+    <label>Full Name</label>
+    <input type="text" id="regName" placeholder="Enter Full Name" required>
 
-            <p>Create Your Student Account</p>
+    <label>University Email</label>
+    <input type="email" id="regEmail" placeholder="student@cu.com" required>
 
-        </div>
+    <label>Password</label>
+    <input type="password" id="regPassword" placeholder="Enter Password" required>
 
-        <form id="registerForm">
+    <button type="submit">REGISTER</button>
 
-            <label>Full Name</label>
+  </form>
 
-            <input 
-                type="text"
-                id="regName"
-                placeholder="Enter Full Name"
-                required
-            >
+  <div class="bottom-links">
+    <p>Already have an account?</p>
+    <a href="login.html">Login Here</a>
+  </div>
 
-            <label>University Email</label>
+</div>
 
-            <input 
-                type="email"
-                id="regEmail"
-                placeholder="student@cu.com"
-                required
-            >
-
-            <label>Password</label>
-
-            <input 
-                type="password"
-                id="regPassword"
-                placeholder="Enter Password"
-                required
-            >
-
-            <button type="submit">
-                REGISTER
-            </button>
-
-        </form>
-
-        <div class="bottom-links">
-
-            <p>Already have an account?</p>
-
-            <a href="login.html">
-                Login Here
-            </a>
-
-        </div>
-
-    </div>
+<script src="auth.js"></script>
 
 </body>
-
 </html>
