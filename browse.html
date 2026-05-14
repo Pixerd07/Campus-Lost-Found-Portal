@@ -2,56 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse Items</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Browse Items</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
+  <nav>
 
-        <h2>Campus Lost & Found</h2>
+    <h2>Campus Lost & Found</h2>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lost.html">Report Lost</a></li>
-            <li><a href="found.html">Report Found</a></li>
-            <li><a href="browse.html">Browse</a></li>
-            <li><a href="admin.html">Admin</a></li>
-        </ul>
+    <ul>
 
-        <div class="nav-right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lost.html">Report Lost</a></li>
+      <li><a href="found.html">Report Found</a></li>
+      <li><a href="browse.html">Browse</a></li>
+      <li><a href="admin.html">Admin</a></li>
 
-            <span id="welcomeUser"></span>
+    </ul>
 
-            <button class="logout-btn">
-                Logout
-            </button>
+    <div class="nav-right">
 
-        </div>
+      <span id="welcomeUser"></span>
 
-    </nav>
-
-
-
-
-    <div class="browse-container">
-
-        <h1>Browse Items</h1>
-
-        <input type="text" id="search" placeholder="Search items...">
-
-        <h2>Lost Items</h2>
-        <div id="lostItems" class="items"></div>
-
-        <h2>Found Items</h2>
-        <div id="foundItems" class="items"></div>
+      <button onclick="logout()" class="logout-btn">
+        Logout
+      </button>
 
     </div>
 
+  </nav>
 
+
+  <div class="browse-container">
+
+    <h1>Browse Items</h1>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search items..."
+    >
+
+    <h2>Lost Items</h2>
+
+    <div id="lostItems" class="items"></div>
+
+    <h2>Found Items</h2>
+
+    <div id="foundItems" class="items"></div>
+
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

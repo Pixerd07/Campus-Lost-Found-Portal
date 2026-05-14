@@ -2,91 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Lost Item</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <title>Report Lost Item</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <nav>
 
+    <h2>Campus Lost & Found</h2>
 
-    <nav>
+    <ul>
 
-        <h2>Campus Lost & Found</h2>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lost.html">Report Lost</a></li>
+      <li><a href="found.html">Report Found</a></li>
+      <li><a href="browse.html">Browse</a></li>
+      <li><a href="admin.html">Admin</a></li>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lost.html">Report Lost</a></li>
-            <li><a href="found.html">Report Found</a></li>
-            <li><a href="browse.html">Browse</a></li>
-            <li><a href="admin.html">Admin</a></li>
-        </ul>
+    </ul>
 
-        <div class="nav-right">
+    <div class="nav-right">
 
-            <span id="welcomeUser"></span>
+      <span id="welcomeUser"></span>
 
-            <button onclick="logout()" class="logout-btn">
-                Logout
-            </button>
-
-        </div>
-
-    </nav>
-
-
-
-
-    <div class="form-container">
-
-        <h1>Report Lost Item</h1>
-
-        <form id="lostForm">
-
-
-            <input type="text" id="name" placeholder="Your Name" required>
-
-
-
-            <input type="text" id="item" placeholder="Lost Item Name" required>
-
-
-
-
-            <input type="text" id="location" placeholder="Lost Location" required>
-
-
-
-
-            <input type="date" id="date" required>
-
-
-
-
-            <textarea id="description" placeholder="Describe the Item"></textarea>
-
-
-
-            <input type="text" id="contact" placeholder="Phone Number or Email" required>
-
-
-
-
-            <button type="submit">
-                Submit Report
-            </button>
-
-        </form>
+      <button onclick="logout()" class="logout-btn">
+        Logout
+      </button>
 
     </div>
 
+  </nav>
 
 
-    <script src="auth.js"></script>
-    <script src="script.js"></script>
+  <div class="form-container">
+
+    <h1>Report Lost Item</h1>
+
+    <form id="lostForm">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="text"
+        id="item"
+        placeholder="Lost Item Name"
+        required
+      >
+
+      <input
+        type="text"
+        id="location"
+        placeholder="Lost Location"
+        required
+      >
+
+      <input
+        type="date"
+        id="date"
+        required
+      >
+
+      <textarea
+        id="description"
+        placeholder="Describe the Item"
+      ></textarea>
+
+      <input
+        type="text"
+        id="contact"
+        placeholder="Phone Number or Email"
+        required
+      >
+
+      <button type="submit">
+        Submit Report
+      </button>
+
+    </form>
+
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

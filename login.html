@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Login</title>
 
-<link rel="stylesheet" href="style.css">
+  <style>  
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#000000,#1a1a1a,#3b0000);
+    }
+</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="auth-body">
 
-<div class="auth-container">
+  <div class="auth-container">
 
-  <h1>Campus Login</h1>
+    <h1>Campus Login</h1>
 
-  <form id="loginForm">
+    <form id="loginForm">
 
-    <input type="email" id="loginEmail" placeholder="University Email" required>
+      <input 
+        type="email"
+        id="loginEmail"
+        placeholder="University Email"
+        required
+      >
 
-    <input type="password" id="loginPassword" placeholder="Password" required>
+      <input 
+        type="password"
+        id="loginPassword"
+        placeholder="Enter Password"
+        required
+      >
 
-    <button type="submit">Login</button>
+      <button type="submit">
+        Login
+      </button>
 
-  </form>
+    </form>
 
-  <p>Don't have an account?</p>
+    <p>Don't have an account?</p>
 
-  <a href="register.html">Register Here</a>
+    <a href="register.html">
+      Register Here
+    </a>
 
-</div>
+  </div>
 
+  <script src="auth.js"></script>
 
-<script src="auth.js"></script>
 </body>
+
 </html>
