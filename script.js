@@ -1,5 +1,4 @@
 
-
 const lostForm = document.getElementById("lostForm");
 
 if(lostForm){
@@ -20,47 +19,17 @@ if(lostForm){
 
       description: document.getElementById("description").value,
 
-      contact: document.getElementById("contact").value
+      contact: document.getElementById("contact").value    };
 
-    };
-
-
-
-    let lostItems = JSON.parse(
-
-      localStorage.getItem("lostItems")
-
-    ) || [];
-
-
-
+    let lostItems = JSON.parse(localStorage.getItem("lostItems")) || [];
     lostItems.push(lostItem);
-
-
-
     localStorage.setItem(
-
       "lostItems",
-      JSON.stringify(lostItems)
-
-    );
-
-
+      JSON.stringify(lostItems));
 
     alert("Lost Item Report Submitted");
-
-
-
-    lostForm.reset();
-
-  });
-
+    lostForm.reset();});
 }
-
-
-
-
-
 
 const foundForm = document.getElementById("foundForm");
 
@@ -86,19 +55,9 @@ if(foundForm){
 
     };
 
-
-
-    let foundItems = JSON.parse(
-
-      localStorage.getItem("foundItems")
-
-    ) || [];
-
-
+    let foundItems = JSON.parse(localStorage.getItem("foundItems")) || [];
 
     foundItems.push(foundItem);
-
-
 
     localStorage.setItem(
 
@@ -107,22 +66,12 @@ if(foundForm){
 
     );
 
-
-
     alert("Found Item Report Submitted");
-
-
-
     foundForm.reset();
 
   });
 
 }
-
-
-
-
-
 
 const lostContainer = document.getElementById("lostItems");
 
@@ -133,8 +82,6 @@ if(lostContainer){
     localStorage.getItem("lostItems")
 
   ) || [];
-
-
 
   lostItems.forEach(item => {
 
@@ -162,11 +109,6 @@ if(lostContainer){
 
 }
 
-
-
-
-
-
 const foundContainer = document.getElementById("foundItems");
 
 if(foundContainer){
@@ -176,8 +118,6 @@ if(foundContainer){
     localStorage.getItem("foundItems")
 
   ) || [];
-
-
 
   foundItems.forEach(item => {
 
@@ -204,11 +144,6 @@ if(foundContainer){
   });
 
 }
-
-
-
-
-
 const search = document.getElementById("search");
 
 if(search){
@@ -217,11 +152,7 @@ if(search){
 
     const value = search.value.toLowerCase();
 
-
-
     const cards = document.querySelectorAll(".item-card");
-
-
 
     cards.forEach(card => {
 

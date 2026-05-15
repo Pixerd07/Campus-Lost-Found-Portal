@@ -1,5 +1,3 @@
-
-
 const registerForm = document.getElementById("registerForm");
 
 if(registerForm){
@@ -75,9 +73,6 @@ if(registerForm){
 
 }
 
-
-
-
 const loginForm = document.getElementById("loginForm");
 
 if(loginForm){
@@ -129,9 +124,6 @@ if(loginForm){
 
 }
 
-
-
-
 const currentPage = window.location.pathname
   .split("/")
   .pop();
@@ -158,9 +150,6 @@ if(
 
 }
 
-
-
-
 function logout(){
 
   localStorage.removeItem("loggedInUser");
@@ -168,9 +157,6 @@ function logout(){
   window.location.href = "login.html";
 
 }
-
-
-
 
 const welcomeUser = document.getElementById(
   "welcomeUser"
