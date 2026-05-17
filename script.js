@@ -170,7 +170,9 @@ if (search) {
 
     cards.forEach(card => {
 
-      card.style.display = card.innerText.toLowerCase().includes(value) ? "block" : "none"; });
+      card.style.display = card.innerText.toLowerCase().includes(value) ? "block" : "none";
+
+    });
 
   });
 
