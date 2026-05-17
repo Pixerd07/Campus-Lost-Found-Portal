@@ -1,5 +1,3 @@
-
-
 const registerForm = document.getElementById("registerForm");
 
 if(registerForm){
@@ -8,6 +6,8 @@ if(registerForm){
 
     e.preventDefault();
 
+
+    //input lega 
     const name = document.getElementById("regName")
       .value
       .trim();
@@ -21,7 +21,7 @@ if(registerForm){
       .value
       .trim();
 
-    const allowedDomain = "@cu.com";
+    const allowedDomain = "@cu.com"; // for uni person only
 
     if(!email.endsWith(allowedDomain)){
 
@@ -30,8 +30,7 @@ if(registerForm){
 
     }
 
-    const user = {
-
+    const user = { //user object
       name,
       email,
       password
@@ -62,7 +61,7 @@ if(registerForm){
       JSON.stringify(users)
     );
 
-    localStorage.setItem(
+    localStorage.setItem( // stores current user
       "loggedInUser",
       JSON.stringify(user)
     );
@@ -76,7 +75,7 @@ if(registerForm){
 }
 
 
-
+// login
 
 const loginForm = document.getElementById("loginForm");
 
@@ -130,7 +129,7 @@ if(loginForm){
 }
 
 
-
+// page protection
 
 const currentPage = window.location.pathname
   .split("/")
@@ -143,6 +142,7 @@ const publicPages = [
 
 ];
 
+// Login 
 const loggedInUser = localStorage.getItem(
   "loggedInUser"
 );
@@ -158,8 +158,7 @@ if(
 
 }
 
-
-
+//
 
 function logout(){
 
@@ -168,9 +167,6 @@ function logout(){
   window.location.href = "login.html";
 
 }
-
-
-
 
 const welcomeUser = document.getElementById(
   "welcomeUser"

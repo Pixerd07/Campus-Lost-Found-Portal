@@ -1,11 +1,6 @@
-
-
 const lostCount = document.getElementById("lostCount");
 
 const foundCount = document.getElementById("foundCount");
-
-
-
 
 const lostItems = JSON.parse(
 
@@ -13,23 +8,17 @@ const lostItems = JSON.parse(
 
 ) || [];
 
-
-
 const foundItems = JSON.parse(
 
   localStorage.getItem("foundItems")
 
 ) || [];
 
-
-
-
 if(lostCount){
 
   lostCount.innerText = lostItems.length;
 
 }
-
 
 
 if(foundCount){
